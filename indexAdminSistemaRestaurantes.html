@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="estiloSistemaRestaurantes.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script type="text/javascript" charset="utf-8" async defer></script>
+	<script src="https://kit.fontawesome.com/037355adb6.js" crossorigin="anonymous"></script>
+
+	
+
+	<title>Inicio - El Perro Morado</title>
+</head>
+<header id="header" class="headerIndex">
+	<div id="contenedorSuperiores">
+	
+		<div class="cajaSuperior"></div>
+		<div class="cajaSuperiorPuntoVenta">
+
+			<img src="img/logoCerca.png" id="logoCara" alt="Logo Cara">
+
+			<h3 class="tituloSede">EL PERRO MORADO<br></h3><h2 id="nombreSede">Pereira - Parque Industrial</h2>
+
+			<h3 class="usuario">Usuario:</h3><h3 id="usuario" class="usuarioNombre">Carlos Garcia<br></h3><h3 id="usuarioRol" class="usuarioRol">ADMINISTRADOR</h3>
+
+
+			<div class="posicionReloj">
+
+				<div class="wrap">
+					<div class="widget">
+						<div class="fecha">
+							<p id="diaSemana" class="diaSemana"></p>
+							<p id="dia" class="dia"></p>
+							<p>de </p>
+							<p id="mes" class="mes"></p>
+							<p>del </p>
+							<p id="year" class="year"></p>
+						</div>
+
+						<div class="reloj">
+							<p id="horas" class="horas"></p>
+							<p>:</p>
+							<p id="minutos" class="minutos"></p>
+							<p>:</p>
+							<div class="caja-segundos">
+								<p id="ampm" class="ampm"></p>
+								<p id="segundos" class="segundos"></p>
+							</div>
+						</div>
+
+					</div>
+		
+				</div>
+				<script src="reloj.js"></script>
+			</div>
+
+		</div>
+
+	</div>
+</header>
+
+	
+<body id= fondoIndex class="fondoIndex">
+
+	<div class="contenedorGeneral">
+		
+		<nav id="nav_general">
+			<ul>
+				<li class="boton_navegadorIndex"><a href="indexAdminSistemaRestaurantes.html" title=""><p class="texto_menuIndex">INICIO</p></a></li>
+
+				<li class="boton_navegador"><a href="ventasSistemaRestaurantes.html" title=""><p class="texto_menu">VENTAS</p></a></li>
+			
+				<li class="boton_navegador"><a href="estadoPedidosSistemaRestaurantes.html" title=""><p class="texto_menu">ESTADO DE PEDIDOS</p></a></li>
+			
+				<li class="boton_navegador"><a href="domiciliosSistemaRestaurantes.html" title=""><p class="texto_menu">DOMICILIOS</p></a></li>
+			
+				<li class="boton_navegador"><a href="entregadorSistemaRestaurantes.html" title=""><p class="texto_menu">ENTREGADOR</p></a></li>
+			
+				<li class="boton_navegador"><a href="clientesSistemaRestaurantes.html" title=""><p class="texto_menu">CLIENTES</p></a></li>
+			
+				<li class="boton_navegador"><a href="egresosSistemaRestaurantes.html" title=""><p class="texto_menu">EGRESOS</p></a></li>
+			
+				<li class="boton_navegador"><a href="cuadreCajaSistemaRestaurantes.html" title=""><p class="texto_menu">CUADRE DE CAJA</p></a></li>
+			
+				<li class="boton_navegador"><a href="cuadreCajaSistemaRestaurantes.html" title=""><p class="texto_menu">REPORTES</p></a></li>
+			
+				<li class="boton_navegador"><a href="referenciasVentaSistemaRestaurantes.html" title=""><p class="texto_menu">REFERENCIAS VENTA</p></a></li>
+			
+				<li class="boton_navegador"><a href="materiasPrimasSistemaRestaurantes.html" title=""><p class="texto_menu">MATERIAS PRIMAS</p></a></li>
+			
+				<li class="boton_navegador"><a href="proveedoresSistemaRestaurantes.html" title=""><p class="texto_menu">PROVEEDORES</p></a></li>
+			
+				<li class="boton_navegador"><a href="comprasSistemaRestaurantes.html" title=""><p class="texto_menu">COMPRAS</p></a></li>
+			
+				<li class="boton_navegador"><a href="costosSistemaRestaurantes.html" title=""><p class="texto_menu">COSTOS</p></a></li>
+			
+				<li class="boton_navegador"><a href="inventariosSistemaRestaurantes.html" title=""><p class="texto_menu">INVENTARIOS</p></a></li>
+			
+				<li class="boton_navegador"><a href="plataformasSistemaRestaurantes.html" title=""><p class="texto_menu">PLATAFORMAS</p></a></li>
+			
+				<li class="boton_navegador"><a href="reportesAdminSistemaRestaurantes.html" title=""><p class="texto_menu">REPORTES ADMIN</p></a></li>
+			
+				<li class="boton_navegador"><a href="administradorSistemaRestaurantes.html" title=""><p class="texto_menu">ADMINISTRADOR</p></a></li>
+			
+				<li class="boton_navegador_cerrar"><p class="texto_menu">CERRAR SESIÓN</p></li>
+			</ul>
+
+		</nav>
+
+
+
+		<div class="contenedorFlexVista">
+
+			<div class="fechaDatos">
+
+				<p>Datos Obtenidos del:</p>
+				<div id="cajaFecha1" class="cajaFecha1">17-08-2021 3:00pm</div>
+				<button class="botonFecha" type=""><i class="far fa-calendar-alt"></i></button>
+				<div class="cajaFechaAl">al</div>
+				<div id="cajaFecha2" class="cajaFecha2">17-08-2021 11:00pm</div>
+				<button class="botonFecha" type=""><i class="far fa-calendar-alt"></i></button>
+			
+			</div>
+			
+			<div class="flexReporteGeneral">
+
+				<div class="datoReporteGeneral">
+					<p>Ventas en Efectivo</p>
+					<div class="cajaSimboloPrecio">
+						<p class="simboloReporteGeneral">$</p>
+						<p><strong id="precioReporteGeneralEfectivo"class="precioReporteGeneral">450.000</strong></p>
+					</div>
+					
+				</div>
+
+				
+				<div class="datoReporteGeneral">
+					<p>Ventas con Datáfono</p>
+					<div class="cajaSimboloPrecio">
+						<p class="simboloReporteGeneral2">$</p>
+						<p><strong id="precioReporteGeneralDatafono"class="precioReporteGeneral2">48.000</strong></p>
+					</div>
+					
+				</div>
+
+
+				<div class="datoReporteGeneral">
+					<p>Ventas con Transferencia</p>
+					<div class="cajaSimboloPrecio">
+						<p class="simboloReporteGeneral2">$</p>
+						<p><strong id="precioReporteGeneralTransferencia"class="precioReporteGeneral2">114.000</strong></p>
+					</div>
+					
+				</div>
+				
+
+				<div class="datoReporteGeneral">
+					<p>Total de Ventas</p>
+					<div class="cajaSimboloPrecio">
+						<p class="simboloReporteGeneral">$</p>
+						<p><strong id="precioReporteGeneralTotal"class="precioReporteGeneral">612.000</strong></p>
+					</div>
+					
+				</div>
+
+
+				<div class="datoReporteGeneral">
+					<p>Ingresos aparte de Ventas</p>
+					<div class="cajaSimboloPrecio">
+						<p class="simboloReporteGeneral2">$</p>
+						<p><strong id="ingresosAparte"class="precioReporteGeneral2">50.000</strong></p>
+					</div>
+				</div>
+
+
+				<div class="datoReporteGeneral">
+					<p>Total Egresos de Caja</p>
+					<div class="cajaSimboloPrecio">
+						<a href="egresosCaja.html"><p class="simboloReporteGeneral2">$</p>
+						<p><strong id="egresosCaja"class="precioReporteGeneralEgresos">35.000</strong></p></a>
+					</div>
+					
+				</div>
+				
+				<div class="datoReporteGeneral">
+					<p>Total descuentos</p>
+					<div class="cajaSimboloPrecio">
+						<a href="descuentos.html"><p class="simboloReporteGeneral">$</p>
+						<p><strong id="totalDescuentos"class="precioReporteGeneralDescuento">10.000</strong></p></a>
+					</div>
+				</div>
+
+
+				<div class="datoReporteGeneralFinal">
+					<p><strong>EFECTIVO REAL</strong></p>
+					<div class="cajaSimboloPrecio">
+						<p class="simboloReporteGeneralFinal">$</p>
+						<p><strong id="efectivoReal"class="precioReporteGeneralFinal">465.000</strong></p>
+					</div>
+					
+				</div>
+
+
+			</div>
+
+			<div class="flexVentas">
+				
+				<div class="ventasSuperior">
+					<p class="ventas">Ventas</p>
+					<div class="ventasIcono"><i class="far fa-money-bill-alt"></i></div>
+				</div>
+				
+				<div class="ventasInferior">
+					<div class="contenedorVentas">
+						
+						<p class="simboloPesosVentas">$<p id="precioVentas" class="precioVentas">612.000<br></p></p>
+						<p class="precioVentasDesc">total de ventas</p>
+						
+					</div>
+						
+					
+					<div class="descuentoFlex">
+						<p class="simboloPesosDto">$</p>
+						<div class="descuentoVenta">Descuento<div id="descuentoVentaPrecio" class="descuentoVentaPrecio">10.000</div></div>
+
+					</div>
+		
+				</div>	
+
+			</div>
+
+
+			<div class="flexTipoVenta">
+
+				<div class="TipoVentaSuperior">
+					<p class="TipoVenta">Tipo de Venta</p>
+					<div class="TipoVentaIcono"><i class="fas fa-cash-register"></i></div>
+				</div>
+
+				<div class="TipoVentaInferior">
+
+
+					<div class="metodoVenta">
+						<div class="contMetodoPorcentaje">
+							<div class="nombreMetodoVenta">Mesas</div>
+							
+						</div>
+
+						<div class="contValor">
+							<div class="simboloPesos">$</div>
+							<div id="valorVentaMesas" class="valorVenta"><strong>328.000&nbsp;</strong></div>
+							<div id="porcentajeVentaMesas" class="porcentajeVenta">54</div>
+							<div class="simboloPorcentaje">%</div>
+						</div>
+
+					</div>		
+
+
+					<div class="metodoVenta">
+						<div class="contMetodoPorcentaje">
+							<div class="nombreMetodoVenta">Domicilios</div>
+							
+						</div>
+
+						<div class="contValor">
+							<div class="simboloPesos">$</div>
+							<div id="valorVentaDomicilios" class="valorVenta"><strong>182.000&nbsp;</strong></div>
+							<div id="porcentajeVentaDomicilios" class="porcentajeVenta">30</div>
+							<div class="simboloPorcentaje">%</div>
+						</div>
+
+					</div>		
+
+
+					<div class="metodoVenta">
+						<div class="contMetodoPorcentaje">
+							<div class="nombreMetodoVenta">Plataformas</div>
+							
+						</div>
+
+						<div class="contValor">
+							<div class="simboloPesos">$</div>
+							<div id="valorVentaPlataformas" class="valorVenta"><strong>102.000&nbsp;</strong></div>
+							<div id="porcentajeVentaPlataformas" class="porcentajeVenta">16</div>
+							<div class="simboloPorcentaje">%</div>
+						</div>
+
+					</div>		
+
+
+		
+				</div>	
+
+			</div>
+
+
+			<div class="flexTipoPago">
+
+				<div class="TipoPagoSuperior">
+					<p class="TipoPago">Tipo de Pago</p>
+					<div class="TipoPagoIcono"><i class="fas fa-wallet"></i></div>
+				</div>
+
+				<div class="TipoPagoInferior">
+
+
+					<div class="metodoPago">
+						<div class="contMetodoPorcentaje">
+							<div class="nombreMetodoPago">Efectivo</div>
+							
+						</div>
+
+						<div class="contValor">
+							<div class="simboloPesos">$</div>
+							<div id="valorPagoEfectivo" class="valorPago"><strong>450.000&nbsp;</strong></div>
+							<div id="porcentajePagoEfectivo" class="porcentajePago">73</div>
+							<div class="simboloPorcentaje">%</div>
+						</div>
+
+					</div>		
+
+
+					<div class="metodoPago">
+						<div class="contMetodoPorcentaje">
+							<div class="nombreMetodoPago">Datáfono</div>
+							
+						</div>
+
+						<div class="contValor">
+							<div class="simboloPesos">$</div>
+							<div id="valorPagoDatafono" class="valorPago"><strong>48.000&nbsp;</strong></div>
+							<div id="porcentajePagoEfectivo" class="porcentajePago">9</div>
+							<div class="simboloPorcentaje">%</div>
+						</div>
+
+					</div>		
+
+
+					<div class="metodoPago">
+						<div class="contMetodoPorcentaje">
+							<div class="nombreMetodoPago">Transferencia</div>
+							
+						</div>
+
+						<div class="contValor">
+							<div class="simboloPesos">$</div>
+							<div id="valorPagoTransferencia" class="valorPago"><strong>114.000&nbsp;</strong></div>
+							<div id="porcentajePagoEfectivo" class="porcentajePago">18</div>
+							<div class="simboloPorcentaje">%</div>
+						</div>
+
+					</div>		
+
+
+		
+				</div>	
+
+			</div>
+
+
+			<div class="flexPedidosAnulados">
+
+				<div class="PedidoAnuladoSuperior">
+					<p class="pedidosAnulados">Pedidos Anulados</p>
+					<div class="pedidosAnuladosIcono"><i class="fas fa-window-close"></i></div>
+				</div>
+
+				<div class="PedidoAnuladoInferior">
+
+
+					<div class="contenedorAnulados">
+
+							<div id="cantAnuladasMostrador" class="cantAnuladas"><strong>2</strong></div>
+							<div class="nombreAnulacion">Mostrador</div>
+
+					</div>		
+
+
+					<div class="contenedorAnulados">
+
+							<div id="cantAnuladasDomicilios" class="cantAnuladas"><strong>1</strong></div>
+							<div class="nombreAnulacion">Domicilios</div>
+							
+					</div>	
+
+
+					<div class="contenedorAnulados">
+
+							<div id="cantAnuladasPlataformas" class="cantAnuladas"><strong>0</strong></div>
+							<div class="nombreAnulacion">Plataformas</div>
+							
+					</div>	
+		
+				</div>	
+				
+			</div>
+
+
+			<div class="flexPedidosAtendidos">
+				
+				<div class="pedidoAtendidoSuperior">
+					<p class="pedidosAtendidos">Pedidos Atendidos</p>
+					<div class="pedidosAtendidosIcono"><i class="fas fa-concierge-bell"></i></div>
+				</div>
+
+				<div class="pedidoAtendidoInferior">
+
+
+					<div class="contenedorAtendidos">
+
+							<div id="cantAtendidosGeneral" class="cantAtendidos"><strong>60</strong></div>
+							<div class="nombreAtendidosGeneral">Pedidos atendidos en general</div>
+
+					</div>		
+
+		
+				</div>	
+
+			</div>
+
+
+			<div class="flexMesasAtendidas">
+				
+				<div class="mesasAtendidasSuperior">
+					<p class="mesasAtendidas">Mesas Atendidas</p>
+					<div class="mesasAtendidasIcono"><i class="fas fa-utensils"></i></div>
+				</div>
+
+				<div class="mesasAtendidasInferior">
+
+
+					<div class="contenedorMesasAtendidas">
+
+							<div id="cantAtendidosMesas" class="cantAtendidos"><strong>32</strong></div>
+							<div class="nombreMesasAtendidas">Mesa(s) atendida(s)</div>
+
+					</div>		
+
+		
+				</div>
+
+			</div>
+
+
+			<div class="flexDomiciliosAtendidos">
+				
+				<div class="domiciliosAtendidosSuperior">
+					<p class="domiciliosAtendidos">Domicilios Atendidos</p>
+					<div class="domiciliosAtendidosIcono"><i class="fas fa-motorcycle"></i></div>
+				</div>
+
+				<div class="domiciliosAtendidosInferior">
+
+
+					<div class="contenedorDomiciliosAtendidos">
+
+							<div id="cantAtendidoDomicilio" class="cantAtendidos"><strong>18</strong></div>
+							<div class="nombreDomiciliosAtendidos">Domicilio(s) atendido(s)</div>
+
+					</div>		
+
+		
+				</div>
+
+
+			</div>
+
+
+			<div class="flexPlataformasAtendidas">
+				
+				<div class="plataformasAtendidasSuperior">
+					<p class="plataformasAtendidas">Plataformas Atendidas</p>
+					<div class="plataformasAtendidasIcono"><i class="fas fa-server"></i></div>
+				</div>
+
+				<div class="plataformasAtendidasInferior">
+
+
+					<div class="contenedorPlataformasAtendidas">
+
+							<div id="cantAtendidoPlataforma" class="cantAtendidos"><strong>10</strong></div>
+							<div class="nombrePlataformasAtendidas">Plataforma(s) atendida(s)</div>
+
+					</div>		
+
+		
+				</div>
+
+
+			</div>
+
+			<div class="flexMeseroDia">
+				
+				<div class="meseroSuperior">
+					<p class="mesero">Mesero(a) del día</p>
+					<div class="meseroIcono"><i class="far fa-address-card"></i></div>
+				</div>
+				
+				<div class="meseroInferior">
+					<div class="contenedorMesero">
+						
+						<p id="nombreMesero" class="nombreMesero"><strong>Miguel Rodriguez</strong></p>
+						<div class="contNumPedidos">
+							<p id="numeroPedidos" class="numeroPedidos"><strong>8</strong></p><p>&nbsp;</p>
+							<p class="Pedidos">pedidos</p>
+						</div>
+					
+					</div>
+						
+					
+					<div class="contenedorParticipacion">
+						<div class="contenedorPorcentaje">
+							<div class="participacionFinal">
+								<p id="porcentajeParticipacion" class="porcentajeParticipacion">19</p>
+								<p>&nbsp;</p>
+								<p class="porcentaje">%</p>
+								<p>&nbsp;</p>
+								<p class="participación">ventas</p>
+							</div>
+							
+							<div>
+								<p>de <strong>Mesas</strong></p>
+							</div>
+						</div>
+						
+						
+
+					</div>
+		
+				</div>	
+				
+			</div>
+
+
+			<div class="flexPromedioMesas">
+				
+				<div class="promedioMesasSuperior">
+					<p class="promedioConsumo">Promedio Consumo</p>
+					<div class="promedioIcono"><i class="fas fa-chart-line"></i></div>
+				</div>
+				
+				<div class="promedioMesasInferior">
+					<div class="contenedorPromedio">
+						<div class="contenedorPrecio">
+							<p>$</p>
+							<p id="precioPromedioMesas" class="precioPromedio">10.250</p>
+						</div>
+						<div class="cantidadPedidos">
+							<p class="descPedidos">en&nbsp;</p>
+							<p id="cantidadPedidosMesas" class="descPedidos2">32</p>
+							<p>&nbsp;</p>
+							<p class="descPedidos2">pedidos</p>
+						</div>
+						
+						
+					</div>
+						
+						<div class="descripcionPromedio"><strong>MESAS</strong></div>
+
+				</div>	
+
+			</div>
+			<div class="flexPromedioDomicilios">
+				
+				<div class="promedioDomiciliosSuperior">
+					<p class="promedioConsumo">Promedio Consumo</p>
+					<div class="promedioIcono"><i class="fas fa-chart-line"></i></div>
+				</div>
+				
+				<div class="promedioDomiciliosInferior">
+					<div class="contenedorPromedio">
+						<div class="contenedorPrecio">
+							<p>$</p>
+							<p id="precioPromedioDomicilios" class="precioPromedio">10.111</p>
+						</div>
+						<div class="cantidadPedidos">
+							<p class="descPedidos">en&nbsp;</p>
+							<p id="cantidadPedidosDomicilios" class="descPedidos2">18</p>
+							<p>&nbsp;</p>
+							<p class="descPedidos2">pedidos</p>
+						</div>
+						
+						
+					</div>
+						
+						<div class="descripcionPromedio"><strong>DOMICILIOS</strong></div>
+
+				</div>	
+
+			</div>
+
+
+			<div class="flexPromedioPlataformas">
+				
+				<div class="promedioPlataformasSuperior">
+					<p class="promedioConsumo">Promedio Consumo</p>
+					<div class="promedioIcono"><i class="fas fa-chart-line"></i></div>
+				</div>
+				
+				<div class="promedioPlataformasInferior">
+					<div class="contenedorPromedio">
+						<div class="contenedorPrecio">
+							<p>$</p>
+							<p id="precioPromedioPlataformas" class="precioPromedio">10.200</p>
+						</div>
+						<div class="cantidadPedidos">
+							<p class="descPedidos">en&nbsp;</p>
+							<p id="cantidadPedidosPlataformas" class="descPedidos2">10</p>
+							<p>&nbsp;</p>
+							<p class="descPedidos2">pedidos</p>
+						</div>
+						
+						
+					</div>
+						
+						<div class="descripcionPromedio"><strong>PLATAFORMAS</strong></div>
+
+				</div>	
+
+			</div>
+
+			<div class="flexReporteFinal1">
+				
+				<div class="masVendidosCantidadSuperior">
+					<p class="topCantidad">Top vendidos por <strong>Cantidad</strong></p>
+					<p class="verTodosCantidad">Ver Todos los productos</p>	
+				</div>
+				<div class="contenedorDatosReferencia">
+
+						<div class="datosNombreReferencia">
+
+							<p class="tituloDescripcion"><strong>Referencia</strong></p>
+							<div id="NombreReferencia1Cant">Salchipapa para 2</div>
+							<div id="NombreReferencia2Cant">Picada para 6</div>
+							<div id="NombreReferencia3Cant">Hamburguesa de Carne</div>
+
+						</div>
+
+						<div class="datosCantidad">
+							<p class="tituloDescripcion"><strong>Cantidad</strong></p>
+							<div id="cantidadReferencia1Cant">9</div>
+							<div id="cantidadReferencia2Cant">7</div>
+							<div id="cantidadReferencia3Cant">5</div>
+						</div>
+
+						<div class="datosVentas">
+							<p class="tituloDescripcion"><strong>Ventas</strong></p>
+							<div class="precioReferencia">
+								<p>$</p>
+								<div id="precioReferencia1Cant">82.500</div>
+							</div>
+							<div class="precioReferencia">
+								<p>$</p>
+								<div id="precioReferencia2Cant">116.900</div>
+							</div>
+							<div class="precioReferencia">
+								<p>$</p>
+								<div id="precioReferencia3Cant">64.500</div>
+							</div>
+						</div>
+						<div class="datosPorcentaje">
+							<p class="tituloDescripcion"><strong>% Ventas</strong></p>
+							<div class="porcentajeReferencia">	
+								<div id="porcentajeReferencia1Cant">16</div>
+								<p>%</p>
+							</div>
+							<div class="porcentajeReferencia">	
+								<div id="porcentajeReferencia2Cant">18</div>
+								<p>%</p>
+							</div>
+							<div class="porcentajeReferencia">	
+								<div id="porcentajeReferencia3Cant">14</div>
+								<p>%</p>
+							</div>
+						</div>
+						
+				</div>
+
+			</div>
+
+
+
+
+			<div class="flexReporteFinal2">
+				
+				<div class="masVendidosValorSuperior">
+					<p class="topValor">Top vendidos por <strong>Valor</strong></p>
+					<p class="verTodosValor">Ver Todos los productos</p>	
+				</div>
+				<div class="contenedorDatosReferencia">
+
+						<div class="datosNombreReferencia">
+
+							<p class="tituloDescripcion"><strong>Referencia</strong></p>
+							<div id="NombreReferencia1Valor">Picada para 6</div>
+							<div id="NombreReferencia2Valor">Costillas bbq</div>
+							<div id="NombreReferencia3Valor">Salchipapa para 2</div>
+
+						</div>
+
+						<div class="datosCantidad">
+							<p class="tituloDescripcion"><strong>Cantidad</strong></p>
+							<div id="cantidadReferencia1Valor">7</div>
+							<div id="cantidadReferencia2Valor">4</div>
+							<div id="cantidadReferencia3Valor">9</div>
+						</div>
+
+						<div class="datosVentas">
+							<p class="tituloDescripcion"><strong>Ventas</strong></p>
+							<div class="precioReferencia">
+								<p>$</p>
+								<div id="precioReferencia1Valor">116.900</div>
+							</div>
+							<div class="precioReferencia">
+								<p>$</p>
+								<div id="precioReferencia2Valor">99.900</div>
+							</div>
+							<div class="precioReferencia">
+								<p>$</p>
+								<div id="precioReferencia3Valor">82.500</div>
+							</div>
+						</div>
+						<div class="datosPorcentaje">
+							<p class="tituloDescripcion"><strong>% Ventas</strong></p>
+							<div class="porcentajeReferencia">	
+								<div id="porcentajeReferencia1Valor">18</div>
+								<p>%</p>
+							</div>
+							<div class="porcentajeReferencia">	
+								<div id="porcentajeReferencia2Valor">17</div>
+								<p>%</p>
+							</div>
+							<div class="porcentajeReferencia">	
+								<div id="porcentajeReferencia3Valor">16</div>
+								<p>%</p>
+							</div>
+						</div>
+						
+				</div>
+
+			</div>
+				
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="footerCopyright">© Todos los derechos reservados | <a href="https://www.fourware.com.co" target="_blank">Fourware</a> 2022</div>
+	</footer>
+</body>
+</html>
